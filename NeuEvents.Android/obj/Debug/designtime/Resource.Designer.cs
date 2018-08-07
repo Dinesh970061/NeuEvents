@@ -4684,6 +4684,9 @@ namespace NeuEvents.Droid
 			// aapt resource value: 2131296341
 			public static int avd_show_password = 2131296341;
 			
+			// aapt resource value: 0
+			public static int Background = 0;
+			
 			// aapt resource value: 2131296342
 			public static int design_bottom_navigation_item_background = 2131296342;
 			
@@ -5236,6 +5239,12 @@ namespace NeuEvents.Droid
 			// aapt resource value: 2131296516
 			public static int ic_vol_type_tv_light = 2131296516;
 			
+			// aapt resource value: 0
+			public static int logo = 0;
+			
+			// aapt resource value: 0
+			public static int logo@2x = 0;
+			
 			// aapt resource value: 2131296517
 			public static int mr_button_connected_dark = 2131296517;
 			
@@ -5302,6 +5311,9 @@ namespace NeuEvents.Droid
 			// aapt resource value: 0
 			public static int Next = 0;
 			
+			// aapt resource value: 0
+			public static int notification = 0;
+			
 			// aapt resource value: 2131296257
 			public static int notification_action_background = 2131296257;
 			
@@ -5340,6 +5352,9 @@ namespace NeuEvents.Droid
 			
 			// aapt resource value: 0
 			public static int Prev = 0;
+			
+			// aapt resource value: 0
+			public static int profileblu = 0;
 			
 			// aapt resource value: 2131296361
 			public static int tooltip_frame_dark = 2131296361;
