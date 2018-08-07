@@ -1,0 +1,8 @@
+C:\Users\Naimisha.G\source\repos\NeuEvents\NeuEvent.Core\bin\Debug\netstandard2.0\NeuEvent.Core.deps.json
+C:\Users\Naimisha.G\source\repos\NeuEvents\NeuEvent.Core\bin\Debug\netstandard2.0\NeuEvent.Core.dll
+C:\Users\Naimisha.G\source\repos\NeuEvents\NeuEvent.Core\bin\Debug\netstandard2.0\NeuEvent.Core.pdb
+C:\Users\Naimisha.G\source\repos\NeuEvents\NeuEvent.Core\obj\Debug\netstandard2.0\NeuEvent.Core.csproj.CoreCompileInputs.cache
+C:\Users\Naimisha.G\source\repos\NeuEvents\NeuEvent.Core\obj\Debug\netstandard2.0\NeuEvent.Core.AssemblyInfoInputs.cache
+C:\Users\Naimisha.G\source\repos\NeuEvents\NeuEvent.Core\obj\Debug\netstandard2.0\NeuEvent.Core.AssemblyInfo.cs
+C:\Users\Naimisha.G\source\repos\NeuEvents\NeuEvent.Core\obj\Debug\netstandard2.0\NeuEvent.Core.dll
+C:\Users\Naimisha.G\source\repos\NeuEvents\NeuEvent.Core\obj\Debug\netstandard2.0\NeuEvent.Core.pdb

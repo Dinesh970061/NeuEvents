@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NeuEvents.UI.Pages.Create">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1.5*"/>
+                    <RowDefinition Height="15*"/>
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Row="0">
+                    <Grid Margin="0,8,0,0">
+                        <Image Source="logo.jpg" HorizontalOptions="Start" VerticalOptions="Start" HeightRequest="48" WidthRequest="48" Margin="10,0,0,0" />
+                        <Label Text="NeuEvents" Margin="60,8,0,0" TextColor="#00AFE1" FontSize="Large"/>
+                        <Image Source="notification.jpg" VerticalOptions="Start" HeightRequest="40" WidthRequest="40" Margin="200,0,0,0" />
+                        <Image Source="profileblu.png" VerticalOptions="Start" HeightRequest="40" WidthRequest="40" Margin="300,0,0,0" />
+                    </Grid>
+                </StackLayout>
+                <StackLayout Grid.Row="1" BackgroundColor="#00AFE1" >
+                    <Frame BackgroundColor="White" VerticalOptions="FillAndExpand" CornerRadius="10" Margin="20,20,20,20">
+                        <ScrollView>
+                            <StackLayout>
+                                <Label Text="Create Event" FontSize="Large" FontAttributes="Bold"/>
+                                <Label Text="EventType" />
+                                <Picker x:Name="EventTypePicker"/>
+                                <Label Text="Event Name"/>
+                                <Entry/>
+                                <Label Text="Start Date"/>
+                                <DatePicker MinimumDate="8/27/2018" MaximumDate="12/31/2018"/>
+                                <Label Text="End Date"/>
+                                <DatePicker MinimumDate="8/27/2018" MaximumDate="12/31/2018"/>
+                                <Label Text="Event Time"/>
+                                <TimePicker/>
+                                <Label Text="Location" />
+                                <Picker x:Name="LocationPicker"/>
+                                <Label Text="Registration Lock Date"/>
+                                <DatePicker MinimumDate="7/27/2018" MaximumDate="8/26/2018"/>
+                                <Label Text="Event Image"/>
+                                <Entry/>
+                                <Label Text="Set of Rules"/>
+                                <Entry/>
+                                <Label Text="Description"/>
+                                <Entry/>
+                            </StackLayout>
+                        </ScrollView>
+                    </Frame>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
