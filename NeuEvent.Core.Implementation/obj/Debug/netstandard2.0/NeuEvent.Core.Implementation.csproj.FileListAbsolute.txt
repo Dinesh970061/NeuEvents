@@ -10,3 +10,15 @@ C:\Users\Naimisha.G\source\repos\NeuEvents\NeuEvent.Core.Implementation\obj\Debu
 C:\Users\Naimisha.G\source\repos\NeuEvents\NeuEvent.Core.Implementation\obj\Debug\netstandard2.0\NeuEvent.Core.Implementation.csproj.CopyComplete
 C:\Users\Naimisha.G\source\repos\NeuEvents\NeuEvent.Core.Implementation\obj\Debug\netstandard2.0\NeuEvent.Core.Implementation.dll
 C:\Users\Naimisha.G\source\repos\NeuEvents\NeuEvent.Core.Implementation\obj\Debug\netstandard2.0\NeuEvent.Core.Implementation.pdb
+D:\Xamarin\NeuEvents\NeuEvent.Core.Implementation\bin\Debug\netstandard2.0\NeuEvent.Core.Implementation.deps.json
+D:\Xamarin\NeuEvents\NeuEvent.Core.Implementation\bin\Debug\netstandard2.0\NeuEvent.Core.Implementation.dll
+D:\Xamarin\NeuEvents\NeuEvent.Core.Implementation\bin\Debug\netstandard2.0\NeuEvent.Core.Implementation.pdb
+D:\Xamarin\NeuEvents\NeuEvent.Core.Implementation\bin\Debug\netstandard2.0\NeuEvent.Core.dll
+D:\Xamarin\NeuEvents\NeuEvent.Core.Implementation\bin\Debug\netstandard2.0\NeuEvent.Core.pdb
+D:\Xamarin\NeuEvents\NeuEvent.Core.Implementation\obj\Debug\netstandard2.0\NeuEvent.Core.Implementation.csprojAssemblyReference.cache
+D:\Xamarin\NeuEvents\NeuEvent.Core.Implementation\obj\Debug\netstandard2.0\NeuEvent.Core.Implementation.csproj.CoreCompileInputs.cache
+D:\Xamarin\NeuEvents\NeuEvent.Core.Implementation\obj\Debug\netstandard2.0\NeuEvent.Core.Implementation.AssemblyInfoInputs.cache
+D:\Xamarin\NeuEvents\NeuEvent.Core.Implementation\obj\Debug\netstandard2.0\NeuEvent.Core.Implementation.AssemblyInfo.cs
+D:\Xamarin\NeuEvents\NeuEvent.Core.Implementation\obj\Debug\netstandard2.0\NeuEvent.Core.Implementation.csproj.CopyComplete
+D:\Xamarin\NeuEvents\NeuEvent.Core.Implementation\obj\Debug\netstandard2.0\NeuEvent.Core.Implementation.dll
+D:\Xamarin\NeuEvents\NeuEvent.Core.Implementation\obj\Debug\netstandard2.0\NeuEvent.Core.Implementation.pdb

@@ -37,7 +37,7 @@
           "lib/netstandard2.0/Xam.Plugin.TabView.dll": {}
         }
       },
-      "Xamarin.Forms/3.0.0.482510": {
+      "Xamarin.Forms/3.1.0.697729": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -241,7 +241,7 @@
           "lib/netstandard2.0/Xam.Plugin.TabView.dll": {}
         }
       },
-      "Xamarin.Forms/3.0.0.482510": {
+      "Xamarin.Forms/3.1.0.697729": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -445,7 +445,7 @@
           "lib/netstandard2.0/Xam.Plugin.TabView.dll": {}
         }
       },
-      "Xamarin.Forms/3.0.0.482510": {
+      "Xamarin.Forms/3.1.0.697729": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -649,7 +649,7 @@
           "lib/netstandard2.0/Xam.Plugin.TabView.dll": {}
         }
       },
-      "Xamarin.Forms/3.0.0.482510": {
+      "Xamarin.Forms/3.1.0.697729": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -878,11 +878,12 @@
         "xam.plugin.tabview.nuspec"
       ]
     },
-    "Xamarin.Forms/3.0.0.482510": {
-      "sha512": "kq209d8qVvulrY3o+nGirENZ3kaZpEN7VWRErWcW1M+ahtDgm4BUXQJ5s9hnp1SAGxQMTMhDAVI3uk5g9NV7hA==",
+    "Xamarin.Forms/3.1.0.697729": {
+      "sha512": "YlFOM9u8onIRxJwYJ3l+O0wFKqzzrDjDrgnoBr1rct+eaQKU77vFydxvTP+WxYlYzR14hYvyLNC65L84+6ke6w==",
       "type": "package",
-      "path": "xamarin.forms/3.0.0.482510",
+      "path": "xamarin.forms/3.1.0.697729",
       "files": [
+        ".signature.p7s",
         "build/netstandard1.0/Mono.Cecil.Mdb.dll",
         "build/netstandard1.0/Mono.Cecil.Pdb.dll",
         "build/netstandard1.0/Mono.Cecil.Rocks.dll",
@@ -1018,12 +1019,13 @@
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/PageControlStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Resources.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/SliderStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/TabbedPageStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Xamarin.Forms.Platform.UAP.xr.xml",
         "lib/uap10.0/Xamarin.Forms.Platform.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.3.0.0.482510.nupkg.sha512",
+        "xamarin.forms.3.1.0.697729.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -1046,7 +1048,7 @@
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
       "NeuEvents.UI >= 1.0.0",
-      "Xamarin.Forms >= 3.0.0.482510"
+      "Xamarin.Forms >= 3.1.0.697729"
     ]
   },
   "packageFolders": {
@@ -1055,11 +1057,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Naimisha.G\\source\\repos\\NeuEvents\\NeuEvents.iOS\\NeuEvents.iOS.csproj",
+      "projectUniqueName": "D:\\Xamarin\\NeuEvents\\NeuEvents.iOS\\NeuEvents.iOS.csproj",
       "projectName": "NeuEvents.iOS",
-      "projectPath": "C:\\Users\\Naimisha.G\\source\\repos\\NeuEvents\\NeuEvents.iOS\\NeuEvents.iOS.csproj",
+      "projectPath": "D:\\Xamarin\\NeuEvents\\NeuEvents.iOS\\NeuEvents.iOS.csproj",
       "packagesPath": "C:\\Users\\Naimisha.G\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Naimisha.G\\source\\repos\\NeuEvents\\NeuEvents.iOS\\obj\\",
+      "outputPath": "D:\\Xamarin\\NeuEvents\\NeuEvents.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1076,8 +1078,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Naimisha.G\\source\\repos\\NeuEvents\\NeuEvents.UI\\NeuEvents.UI.csproj": {
-              "projectPath": "C:\\Users\\Naimisha.G\\source\\repos\\NeuEvents\\NeuEvents.UI\\NeuEvents.UI.csproj"
+            "D:\\Xamarin\\NeuEvents\\NeuEvents.UI\\NeuEvents.UI.csproj": {
+              "projectPath": "D:\\Xamarin\\NeuEvents\\NeuEvents.UI\\NeuEvents.UI.csproj"
             }
           }
         }
@@ -1088,7 +1090,7 @@
         "dependencies": {
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[3.0.0.482510, )"
+            "version": "[3.1.0.697729, )"
           }
         }
       }
@@ -1104,20 +1106,5 @@
         "#import": []
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Forms from 3.1.0.697729 to 3.0.0.482510. Reference the package directly from the project to select a different version. \r\n NeuEvents.iOS -> NeuEvents.UI -> Xamarin.Forms (>= 3.1.0.697729) \r\n NeuEvents.iOS -> Xamarin.Forms (>= 3.0.0.482510)",
-      "libraryId": "Xamarin.Forms",
-      "targetGraphs": [
-        "Xamarin.iOS,Version=v1.0",
-        "Xamarin.iOS,Version=v1.0/win",
-        "Xamarin.iOS,Version=v1.0/win-x64",
-        "Xamarin.iOS,Version=v1.0/win-x86"
-      ]
-    }
-  ]
+  }
 }

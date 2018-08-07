@@ -901,11 +901,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Naimisha.G\\source\\repos\\NeuEvents\\NeuEvents.Android\\NeuEvents.Android.csproj",
+      "projectUniqueName": "D:\\Xamarin\\NeuEvents\\NeuEvents.Android\\NeuEvents.Android.csproj",
       "projectName": "NeuEvents.Android",
-      "projectPath": "C:\\Users\\Naimisha.G\\source\\repos\\NeuEvents\\NeuEvents.Android\\NeuEvents.Android.csproj",
+      "projectPath": "D:\\Xamarin\\NeuEvents\\NeuEvents.Android\\NeuEvents.Android.csproj",
       "packagesPath": "C:\\Users\\Naimisha.G\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Naimisha.G\\source\\repos\\NeuEvents\\NeuEvents.Android\\obj\\",
+      "outputPath": "D:\\Xamarin\\NeuEvents\\NeuEvents.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -922,8 +922,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "C:\\Users\\Naimisha.G\\source\\repos\\NeuEvents\\NeuEvents.UI\\NeuEvents.UI.csproj": {
-              "projectPath": "C:\\Users\\Naimisha.G\\source\\repos\\NeuEvents\\NeuEvents.UI\\NeuEvents.UI.csproj"
+            "D:\\Xamarin\\NeuEvents\\NeuEvents.UI\\NeuEvents.UI.csproj": {
+              "projectPath": "D:\\Xamarin\\NeuEvents\\NeuEvents.UI\\NeuEvents.UI.csproj"
             }
           }
         }

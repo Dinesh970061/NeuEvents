@@ -273,11 +273,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Naimisha.G\\source\\repos\\NeuEvents\\NeuEvent.Core\\NeuEvent.Core.csproj",
+      "projectUniqueName": "D:\\Xamarin\\NeuEvents\\NeuEvent.Core\\NeuEvent.Core.csproj",
       "projectName": "NeuEvent.Core",
-      "projectPath": "C:\\Users\\Naimisha.G\\source\\repos\\NeuEvents\\NeuEvent.Core\\NeuEvent.Core.csproj",
+      "projectPath": "D:\\Xamarin\\NeuEvents\\NeuEvent.Core\\NeuEvent.Core.csproj",
       "packagesPath": "C:\\Users\\Naimisha.G\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Naimisha.G\\source\\repos\\NeuEvents\\NeuEvent.Core\\obj\\",
+      "outputPath": "D:\\Xamarin\\NeuEvents\\NeuEvent.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
