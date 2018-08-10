@@ -34,14 +34,12 @@
                                 <TimePicker/>
                                 <Label Text="Location" />
                                 <Picker x:Name="LocationPicker"/>
-                                <Label Text="Registration Lock Date"/>
-                                <DatePicker MinimumDate="7/27/2018" MaximumDate="8/26/2018"/>
-                                <Label Text="Event Image"/>
-                                <Entry/>
                                 <Label Text="Set of Rules"/>
                                 <Entry/>
                                 <Label Text="Description"/>
                                 <Entry/>
+                                <Button Text="Create" BackgroundColor="#00AFE1" HeightRequest="40" WidthRequest="20" MinimumWidthRequest="20" BorderRadius="20" TextColor="White">
+                                </Button>
                             </StackLayout>
                         </ScrollView>
                     </Frame>

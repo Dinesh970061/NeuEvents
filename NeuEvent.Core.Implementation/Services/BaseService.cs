@@ -30,7 +30,7 @@ namespace NeuEvent.Core.Implementation.Services
 
                 if (response.IsSuccessStatusCode)
                 {
-                    var content = response.Content.ToString();
+                    var content = await response.Content.ReadAsStringAsync();
                     var data = JsonConvert.DeserializeObject<T>(content);
 
                     return data;

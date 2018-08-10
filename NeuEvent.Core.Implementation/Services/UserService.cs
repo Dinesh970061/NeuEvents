@@ -13,7 +13,12 @@ namespace NeuEvent.Core.Implementation.Services
     {
         public async Task<User> AddUser(User user)
         {
-            var httpRequest = new HttpRequestMessage();
+            var uri = $"{BaseUrl}/User/add";
+            var httpRequest = new HttpRequestMessage()
+            {
+                RequestUri = new Uri(uri),
+                Method = HttpMethod.Post
+            };
 
             var result = await SendRequest<UserDto>(httpRequest);
 
@@ -26,8 +31,13 @@ namespace NeuEvent.Core.Implementation.Services
 
         public async Task<User> GetUserById(int userId)
         {
-            var httpRequest = new HttpRequestMessage();
-            
+            var uri = $"{BaseUrl}/User/{userId}";
+            var httpRequest = new HttpRequestMessage()
+            {
+                RequestUri = new Uri(uri),
+                Method = HttpMethod.Get,
+            };
+
             var result = await SendRequest<UserDto>(httpRequest);
             
             if(result != null)
