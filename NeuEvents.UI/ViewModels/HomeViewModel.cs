@@ -29,12 +29,12 @@ namespace NeuEvents.UI.ViewModels
 
         private async Task OnNaviateToCreatePage()
         {
-           // await GetUser();
+           //await PostUser();
 
             await _navigation.PushAsync(new Create());
         }
 
-        private async Task GetUser()
+        private async Task PostUser()
         {
             try
             {
@@ -42,7 +42,7 @@ namespace NeuEvents.UI.ViewModels
             }
             catch(Exception ex)
             {
-
+                throw ex;
             }
         }
     }
