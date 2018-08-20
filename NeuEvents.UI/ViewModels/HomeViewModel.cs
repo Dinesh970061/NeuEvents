@@ -12,7 +12,7 @@ namespace NeuEvents.UI.ViewModels
 {
     public class HomeViewModel
     {
-        private IUserService _userSerivce;
+        //private IUserService _userSerivce;
 
         private INavigation _navigation;
 
@@ -22,23 +22,29 @@ namespace NeuEvents.UI.ViewModels
 
         public HomeViewModel(INavigation navigation)
         {
-            _userSerivce = new UserService();
+           // _userSerivce = new UserService();
             _navigation = navigation;
             NaviateToCreatePageCommand = new Command(async () => await OnNaviateToCreatePage());
         }
 
         private async Task OnNaviateToCreatePage()
         {
-           //await PostUser();
-
-            await _navigation.PushAsync(new Create());
+            //await GetUser();
+            try
+            {
+                await _navigation.PushAsync(new NavigationPage(new Create()));
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
-        private async Task PostUser()
+        private async Task GetUser()
         {
             try
             {
-                var user = await _userSerivce.GetUserById(Id);
+                //var user = await _userSerivce.GetUserById(Id);
             }
             catch(Exception ex)
             {

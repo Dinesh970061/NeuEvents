@@ -1,4 +1,3 @@
-using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using NeuEvents.UI.Pages;
 using System;
 using Xamarin.Forms;
@@ -16,16 +15,14 @@ namespace NeuEvents
         public static string ReturnUri = "https://neu-event-client-test.azurewebsites.net/";
         //No need to change  
         public static string GraphResourceUri = "https://graph.microsoft.com/";
-        public static AuthenticationResult AuthenticationResult = null;
-
-        private NavigationPage Home;
+        //public static AuthenticationResult AuthenticationResult = null;
 
         public App()
         {
             InitializeComponent();
 
             MainPage = new NavigationPage(new Login());
-            Home = new NavigationPage(new Create());
+            //Home = new NavigationPage(new Create());
         }
 
 		protected override void OnStart ()

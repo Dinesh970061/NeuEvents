@@ -25,6 +25,8 @@
                     <Label Text="TeamType:{Binding.TeamType}"/>
                     <Label Text="FixtureType:{Binding.FxitureType}"/>
                     <Label Text="OrganzerNam:{Binding.UserName}"/>
+                    <Button Text="Register" BackgroundColor="#00AFE1" HeightRequest="40" WidthRequest="20" MinimumWidthRequest="20" BorderRadius="20" TextColor="White" Clicked="Register_Clicked">
+                    </Button>
                 </StackLayout>
             </Grid>
         </StackLayout>

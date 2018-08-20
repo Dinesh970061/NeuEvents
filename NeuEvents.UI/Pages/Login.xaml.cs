@@ -1,5 +1,4 @@
-﻿using Microsoft.IdentityModel.Clients.ActiveDirectory;
-using NeuEvent.Core.Interfaces.Services;
+﻿using NeuEvent.Core.Interfaces.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +16,7 @@ namespace NeuEvents
 		}
         async void Button_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new Home());
+            await Navigation.PushModalAsync(new NavigationPage(new Home()));
             //try
             //{
             //    var data = await DependencyService.Get<IAuthenticator>().Authenticate(App.tenanturl, App.GraphResourceUri, App.ApplicationID, App.ReturnUri);

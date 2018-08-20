@@ -8,12 +8,12 @@ using Xamarin.Forms.Xaml;
 
 namespace NeuEvents.UI.Pages
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Create : ContentPage
-	{
-		public Create ()
-		{
-			InitializeComponent ();
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Create : ContentPage
+    {
+        public Create()
+        {
+            InitializeComponent();
             LocationPicker.Items.Add("Bangalore");
             LocationPicker.Items.Add("Hyderabad");
             LocationPicker.Items.Add("Kochi");
@@ -21,5 +21,10 @@ namespace NeuEvents.UI.Pages
             EventTypePicker.Items.Add("Hackathon");
             EventTypePicker.Items.Add("Tournament");
         }
-	}
+
+        async void Create_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new NavigationPage(new View()));
+        }
+    }
 }

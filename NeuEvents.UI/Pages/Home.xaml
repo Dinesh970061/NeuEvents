@@ -45,11 +45,11 @@
                             </Grid>
                         </StackLayout>
                         <StackLayout Grid.Row="3" >
-                        <Button HorizontalOptions="Fill" VerticalOptions="Fill"  Text="+"   Command="{Binding NaviateToCreatePageCommand}">
+                        <!--<Button HorizontalOptions="Fill" VerticalOptions="Fill"  Text="+"   Command="{Binding NaviateToCreatePageCommand}">
                            
-                        </Button>
-                        <!--<Button Text="+" TextColor="White" BackgroundColor="#00AFE1"  WidthRequest="30" BorderRadius="100" Command="{Binding NaviateToCreatePageCommand}">-->
-                            <!--<Image Source="Create.png" HeightRequest="40" HorizontalOptions="End" >
+                        </Button>-->
+                        <Button Text="+" TextColor="White" BackgroundColor="#00AFE1"  WidthRequest="30" BorderRadius="100" Command="{Binding NaviateToCreatePageCommand}"></Button>
+                        <!--<Image Source="Create.png" HeightRequest="40" HorizontalOptions="End" >
                             <Image.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding NaviateToCreatePageCommand}"/>
                             </Image.GestureRecognizers>
