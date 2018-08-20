@@ -29,5 +29,6 @@ namespace NeuEvent.Core.Models
         public virtual ICollection<Comment> Comments { get; set; }
         public virtual ICollection<MatchFixtures> MatchFixtures { get; set; }
         public virtual User Organizer { get; set; }
+        public TimeSpan EventTime { get; internal set; }
     }
 }
