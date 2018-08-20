@@ -4,9 +4,29 @@
              x:Class="NeuEvents.UI.View">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="13*"/>
+                </Grid.ColumnDefinitions>
+                <StackLayout Grid.Column="0">
+                    <!--<Image Source="{Binding.EventImage}"/>-->
+                </StackLayout>
+                <StackLayout Grid.Column="1">
+                    <Label Text="EventName:{Binding.EventName}"/>
+                    <Label Text="Location:{Binding.Location}"/>
+                    <Label Text="Description:{Binding.Description}"/>
+                    <Label Text="EventTime:{Binding.EventTime}"/>
+                    <Label Text="StartDate:{Binding.StartDate}"/>
+                    <Label Text="EndDate:{Binding.EndDate}"/>
+                    <Label Text="RegistrationLockDate:{Binding.RegistrationLockDate}"/>
+                    <Label Text="TeamCpacity:{Binding.TeamCpacity}"/>
+                    <Label Text="RulesandRegualtions:{Binding.RulesandRegualtions}"/>
+                    <Label Text="TeamType:{Binding.TeamType}"/>
+                    <Label Text="FixtureType:{Binding.FxitureType}"/>
+                    <Label Text="OrganzerNam:{Binding.UserName}"/>
+                </StackLayout>
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -45,24 +45,10 @@
                             </Grid>
                         </StackLayout>
                         <StackLayout Grid.Row="3" >
-                        <Button HorizontalOptions="Fill" VerticalOptions="Fill" Text="+"   Command="{Binding NaviateToCreatePageCommand}">
-                            <Button.WidthRequest>
-                                <OnIdiom x:TypeArguments="x:Double" Phone="60" Tablet="80" />
-                            </Button.WidthRequest>
-                            <Button.HeightRequest>
-                                <OnIdiom x:TypeArguments="x:Double" Phone="60" Tablet="80" />
-                            </Button.HeightRequest>
-                            <Button.BorderRadius>
-                                <OnIdiom x:TypeArguments="x:Int32" Phone="30" Tablet="40" />
-                            </Button.BorderRadius>
+                        <Button HorizontalOptions="Fill" VerticalOptions="Fill"  Text="+"   Command="{Binding NaviateToCreatePageCommand}">
                            
                         </Button>
-                        <!--<ButtonCircle>-->
-                            
-                        <!--</ButtonCircle>
-                        <Button Text="+" TextColor="White" sha                    BackgroundColor="#00AFE1"  WidthRequest="30" BorderRadius="100" Command="{Binding NaviateToCreatePageCommand}">
-
-                            </Button>-->
+                        <!--<Button Text="+" TextColor="White" BackgroundColor="#00AFE1"  WidthRequest="30" BorderRadius="100" Command="{Binding NaviateToCreatePageCommand}">-->
                             <!--<Image Source="Create.png" HeightRequest="40" HorizontalOptions="End" >
                             <Image.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding NaviateToCreatePageCommand}"/>

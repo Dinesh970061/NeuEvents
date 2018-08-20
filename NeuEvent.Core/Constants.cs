@@ -6,6 +6,6 @@ namespace NeuEvent.Core
 {
     public class Constants
     {
-        public static string BaseUrl = "";
+        public static string BaseUrl = "https://neu-event-service-test.azurewebsites.net/api";
     }
 }

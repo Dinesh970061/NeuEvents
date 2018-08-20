@@ -1,4 +1,5 @@
 ﻿using NeuEvent.Core.Enums;
+using NeuEvent.Core.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -22,5 +23,24 @@ namespace NeuEvent.Core.DTOs
         public TimeSpan EventTime { get; set; }
         public string UserName { get; set; }
         public string RulesAndRegulations { get; set; }
+
+        public Event ConvertToModel()
+        {
+            var events = new Event();
+            events.EventId = EventId;
+            events.EventName = EventName;
+            events.OrganizerId = OrganizerId;
+            events.Location = Location;
+            events.Description = Description;
+            events.StartDate = StartDate;
+            events.EndDate = EndDate;
+            events.RegistrationLockDate = RegistrationLockDate;
+            events.CreationDate = CreationDate;
+            events.EventImage = EventImage;
+            events.EventTime = events.StartDate.TimeOfDay;
+            events.RulesAndRegulations = RulesAndRegulations;
+
+            return events;
+        }
     }
 }
