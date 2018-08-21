@@ -11,27 +11,23 @@ using Xamarin.Forms.Xaml;
 
 namespace NeuEvents
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Home : ContentPage
-	{
-        TabViewControl tabView;
-        public Home ()
-		{
-			InitializeComponent ();
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Home : ContentPage
+    {
 
-            this.BindingContext = new HomeViewModel(Navigation);
+        private HomeViewModel _homeViewModel;
 
-            tabView = new TabViewControl(new List<TabItem>()
-            {
-                new TabItem("All", new Label{HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand}),
-                new TabItem("Fundoo", new Label{HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand}),
-                new TabItem("Hackathon", new Label{HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand}),
-                new TabItem("Tournament", new Label{HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand}),
-            });
+        public Home()
+        {
+            InitializeComponent();
+            _homeViewModel = new HomeViewModel(Navigation);
+            this.BindingContext = _homeViewModel;
+        }
 
-            tabView.HorizontalOptions = LayoutOptions.FillAndExpand;
-            tabView.VerticalOptions = LayoutOptions.FillAndExpand;
-            tabViewLayout.Children.Add(tabView);
-		}
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            _homeViewModel.OnAppearing();
+        }
     }
 }

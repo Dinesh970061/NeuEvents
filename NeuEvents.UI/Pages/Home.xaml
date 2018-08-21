@@ -1,63 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="NeuEvents.Home"
-             BackgroundImage="Background.png">
+             x:Class="NeuEvents.Home">
 
     <ContentPage.Content>
         <StackLayout>
-            <!--<ScrollView>-->
-                <Frame BackgroundColor="White" VerticalOptions="FillAndExpand" CornerRadius="10" Margin="20,20,20,20">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+               <StackLayout Grid.Row="0" Margin="0,5,0,0">
                     <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="1*"/>
-                            <RowDefinition Height="1*"/>
-                            <RowDefinition Height="5*"/>
-                            <RowDefinition Height="1*"/>
-                        </Grid.RowDefinitions>
-                        <StackLayout Grid.Row="0">
-                            <Grid>
-                                <Image Source="logo.jpg" HorizontalOptions="Start" VerticalOptions="Start" HeightRequest="48" WidthRequest="48"/>
-                                <Label Text="NeuEvents" Margin="50,1,0,0" TextColor="#00AFE1" FontSize="Large"/>
-                                <Image Source="notification.jpg" VerticalOptions="Start" HeightRequest="40" WidthRequest="40" Margin="120,0,0,0" />
-                                <Image Source="profileblu.png" VerticalOptions="Start" HeightRequest="40" WidthRequest="40" Margin="230,0,0,0" />
-                            </Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="5*"/>
+                            <ColumnDefinition Width="13*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Grid.Column="0">
+                            <Image Source="{Binding Event.EventImage, StringFormat='EventImage {0}'}"/>
                         </StackLayout>
-                        <StackLayout Grid.Row="1">
-                            <StackLayout x:Name="tabViewLayout">
-                            </StackLayout>
-                        </StackLayout>
-                        <StackLayout Grid.Row="2" Margin="0,18,0,0">
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="5*"/>
-                                    <ColumnDefinition Width="13*"/>
-                                </Grid.ColumnDefinitions>
-                                <StackLayout Grid.Column="0">
-                                    <Image Source="tt.jpg"/>
-                                </StackLayout>
-                                <StackLayout Grid.Column="1">
-                                    <Label Text="EventName:-     "/>
-                                    <Label Text="Location: " />
-                                    <Label Text="EventTime: "/>
-                                    <Label Text="OrganizerName: "/>
-                                </StackLayout>
-                            </Grid>
-                        </StackLayout>
-                        <StackLayout Grid.Row="3" >
-                        <!--<Button HorizontalOptions="Fill" VerticalOptions="Fill"  Text="+"   Command="{Binding NaviateToCreatePageCommand}">
-                           
-                        </Button>-->
-                        <Button Text="+" TextColor="White" BackgroundColor="#00AFE1"  WidthRequest="30" BorderRadius="100" Command="{Binding NaviateToCreatePageCommand}"></Button>
-                        <!--<Image Source="Create.png" HeightRequest="40" HorizontalOptions="End" >
-                            <Image.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding NaviateToCreatePageCommand}"/>
-                            </Image.GestureRecognizers>
-                        </Image>-->
+                        <StackLayout Grid.Column="1">
+                            <Label Text="{Binding Event.EventName, StringFormat= 'EventName {0}'}"/>
+                            <Label Text="{Binding Event.Location, StringFormat= 'Location {0}'}"/>
+                            <Label Text="{Binding Event.EventTime, StringFormat= 'EventTime {0}'}"/>
+                            <Label Text="{Binding Event.StartDate.Date, StringFormat= 'StartDate {0}'}"/>
+                            <Label Text="{Binding Event.OrganizerName, StringFormat= 'OrganizerName {0}'}"/>
                         </StackLayout>
                     </Grid>
-                </Frame>
-             <!--</ScrollView>-->
+                </StackLayout>
+                <StackLayout Grid.Row="1" >
+                    <Button Text="+"  BorderRadius="20"
+                        BackgroundColor="#00AFE1" Command="{Binding NaviateToCreatePageCommand}"
+                        TextColor="White"/>
+                </StackLayout>
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

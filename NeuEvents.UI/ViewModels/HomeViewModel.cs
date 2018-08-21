@@ -1,8 +1,10 @@
 ﻿using NeuEvent.Core.Implementation.Services;
 using NeuEvent.Core.Interfaces.Services;
+using NeuEvent.Core.Models;
 using NeuEvents.UI.Pages;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -10,26 +12,35 @@ using Xamarin.Forms;
 
 namespace NeuEvents.UI.ViewModels
 {
-    public class HomeViewModel
+    public class HomeViewModel : INotifyPropertyChanged
     {
         //private IUserService _userSerivce;
 
         private INavigation _navigation;
 
-        public int Id { get; set; } = 3;
-
+        private IEventService _eventService;
         public ICommand NaviateToCreatePageCommand { get; set; }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public int Id { get; set; } = 14;
+
+        public Event Event { get; set; }
 
         public HomeViewModel(INavigation navigation)
         {
-           // _userSerivce = new UserService();
+            _eventService = new EventService();
             _navigation = navigation;
             NaviateToCreatePageCommand = new Command(async () => await OnNaviateToCreatePage());
         }
 
+        public async void OnAppearing()
+        {
+            await GetEvent();
+        }
+
         private async Task OnNaviateToCreatePage()
         {
-            //await GetUser();
             try
             {
                 await _navigation.PushAsync(new NavigationPage(new Create()));
@@ -40,13 +51,14 @@ namespace NeuEvents.UI.ViewModels
             }
         }
 
-        private async Task GetUser()
+        private async Task GetEvent()
         {
             try
             {
-                //var user = await _userSerivce.GetUserById(Id);
+                Event = await _eventService.GetEventById(Id);
+                PropertyChanged(this, new PropertyChangedEventArgs("Event"));
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw ex;
             }
