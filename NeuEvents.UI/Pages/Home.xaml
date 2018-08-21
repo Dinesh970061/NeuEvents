@@ -1,12 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="NeuEvents.Home"
-             BackgroundImage="Background.png">
+                  xmlns:local ="clr-namespace:NeuEvents.UI.Pages"
+                  x:Class="NeuEvents.Home" Title="abc">
+    <MasterDetailPage.Master>
+        <local:MasterPage x:Name="masterPage"/>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <local:AllEvents />
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
 
-    <ContentPage.Content>
+<!--<ContentPage.Content>
         <StackLayout>
-            <!--<ScrollView>-->
+            --><!--<ScrollView>--><!--
                 <Frame BackgroundColor="White" VerticalOptions="FillAndExpand" CornerRadius="10" Margin="20,20,20,20">
                     <Grid>
                         <Grid.RowDefinitions>
@@ -45,20 +56,20 @@
                             </Grid>
                         </StackLayout>
                         <StackLayout Grid.Row="3" >
-                        <!--<Button HorizontalOptions="Fill" VerticalOptions="Fill"  Text="+"   Command="{Binding NaviateToCreatePageCommand}">
+                        --><!--<Button HorizontalOptions="Fill" VerticalOptions="Fill"  Text="+"   Command="{Binding NaviateToCreatePageCommand}">
                            
-                        </Button>-->
+                        </Button>--><!--
                         <Button Text="+" TextColor="White" BackgroundColor="#00AFE1"  WidthRequest="30" BorderRadius="100" Command="{Binding NaviateToCreatePageCommand}"></Button>
-                        <!--<Image Source="Create.png" HeightRequest="40" HorizontalOptions="End" >
+                        --><!--<Image Source="Create.png" HeightRequest="40" HorizontalOptions="End" >
                             <Image.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding NaviateToCreatePageCommand}"/>
                             </Image.GestureRecognizers>
-                        </Image>-->
+                        </Image>--><!--
                         </StackLayout>
                     </Grid>
                 </Frame>
-             <!--</ScrollView>-->
+             --><!--</ScrollView>--><!--
         </StackLayout>
     </ContentPage.Content>
-</ContentPage>
+</ContentPage>-->
 
