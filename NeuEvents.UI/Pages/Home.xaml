@@ -1,40 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="NeuEvents.Home">
-
-    <ContentPage.Content>
-        <StackLayout>
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="10*"/>
-                    <RowDefinition Height="1*"/>
-                </Grid.RowDefinitions>
-               <StackLayout Grid.Row="0" Margin="0,5,0,0">
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="5*"/>
-                            <ColumnDefinition Width="13*"/>
-                        </Grid.ColumnDefinitions>
-                        <StackLayout Grid.Column="0">
-                            <Image Source="{Binding Event.EventImage, StringFormat='EventImage {0}'}"/>
-                        </StackLayout>
-                        <StackLayout Grid.Column="1">
-                            <Label Text="{Binding Event.EventName, StringFormat= 'EventName {0}'}"/>
-                            <Label Text="{Binding Event.Location, StringFormat= 'Location {0}'}"/>
-                            <Label Text="{Binding Event.EventTime, StringFormat= 'EventTime {0}'}"/>
-                            <Label Text="{Binding Event.StartDate.Date, StringFormat= 'StartDate {0}'}"/>
-                            <Label Text="{Binding Event.OrganizerName, StringFormat= 'OrganizerName {0}'}"/>
-                        </StackLayout>
-                    </Grid>
-                </StackLayout>
-                <StackLayout Grid.Row="1" >
-                    <Button Text="+"  BorderRadius="20"
-                        BackgroundColor="#00AFE1" Command="{Binding NaviateToCreatePageCommand}"
-                        TextColor="White"/>
-                </StackLayout>
-            </Grid>
-        </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+                  xmlns:local ="clr-namespace:NeuEvents.UI.Pages"
+                  x:Class="NeuEvents.Home" Title="abc">
+    <MasterDetailPage.Master>
+        <local:MasterPage x:Name="masterPage"/>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <local:AllEvents />
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
 
