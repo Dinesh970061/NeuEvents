@@ -45,5 +45,23 @@ namespace NeuEvent.Core.Implementation.Services
             }
             return null;
         }
+
+        public async Task<Event> GetEvents(int skip, int take)
+        {
+            var uri = $"{BaseUrl}/events/upcoming?skip={skip}&take={take}";
+            var httpRequest = new HttpRequestMessage()
+            {
+                RequestUri = new Uri(uri),
+                Method = HttpMethod.Get,
+            };
+
+            var result = await SendRequest<EventDto>(httpRequest);
+
+            if (result != null)
+            {
+                return result.ConvertToModel();
+            }
+            return null;
+        }
     }
 }
