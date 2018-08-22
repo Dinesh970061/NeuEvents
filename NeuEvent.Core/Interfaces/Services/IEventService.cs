@@ -11,5 +11,7 @@ namespace NeuEvent.Core.Interfaces.Services
         Task<Event> GetEventById(int eventId);
 
         Task<Event> AddEvent(Event events);
+
+        Task<Event> GetEvents(int skip, int take);
     }
 }

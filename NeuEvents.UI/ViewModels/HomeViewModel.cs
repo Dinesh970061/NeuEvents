@@ -23,7 +23,9 @@ namespace NeuEvents.UI.ViewModels
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public int Id { get; set; } = 14;
+        public int EventId { get; set; } = 14;
+        public int skip { get; set; } = 0;
+        public int take { get; set; } = 3;
 
         public Event Event { get; set; }
 
@@ -55,13 +57,27 @@ namespace NeuEvents.UI.ViewModels
         {
             try
             {
-                Event = await _eventService.GetEventById(Id);
+                Event = await _eventService.GetEventById(EventId);
                 PropertyChanged(this, new PropertyChangedEventArgs("Event"));
             }
             catch (Exception ex)
             {
                 throw ex;
             }
+        }
+
+        private async Task GetEvents()
+        {
+            try
+            {
+                Event = await _eventService.GetEvents(skip, take);
+                PropertyChanged(this, new PropertyChangedEventArgs("Event"));
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
         }
     }
 }
