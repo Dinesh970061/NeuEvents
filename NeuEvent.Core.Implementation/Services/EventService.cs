@@ -13,7 +13,7 @@ namespace NeuEvent.Core.Implementation.Services
     {
         public async Task<Event> AddEvent(Event events)
         {
-            var uri = $"{BaseUrl}/Event/add";
+            var uri = $"{BaseUrl}/events/add";
             var httpRequest = new HttpRequestMessage()
             {
                 RequestUri = new Uri(uri),
@@ -30,7 +30,7 @@ namespace NeuEvent.Core.Implementation.Services
 
         public async Task<Event> GetEventById(int eventId)
         {
-            var uri = $"{BaseUrl}/Event/{eventId}";
+            var uri = $"{BaseUrl}/events/{eventId}";
             var httpRequest = new HttpRequestMessage()
             {
                 RequestUri = new Uri(uri),

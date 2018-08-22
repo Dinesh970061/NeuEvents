@@ -17,9 +17,8 @@
                         <Image Source="profileblu.png" VerticalOptions="Start" HeightRequest="40" WidthRequest="40" Margin="300,0,0,0" />
                     </Grid>
                 </StackLayout>
-                <StackLayout Grid.Row="1" BackgroundColor="#00AFE1" >
-                    <Frame BackgroundColor="White" VerticalOptions="FillAndExpand" CornerRadius="10" Margin="20,20,20,20">
-                        <ScrollView>
+                <StackLayout Grid.Row="1" Margin="10,5,10,0">
+                      <ScrollView>
                             <StackLayout>
                                 <Label Text="Create Event" FontSize="Large" FontAttributes="Bold"/>
                                 <Label Text="EventType" />
@@ -42,7 +41,6 @@
                                 </Button>
                             </StackLayout>
                         </ScrollView>
-                    </Frame>
                 </StackLayout>
             </Grid>
         </StackLayout>
