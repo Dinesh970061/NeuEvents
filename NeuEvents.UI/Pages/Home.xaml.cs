@@ -11,23 +11,23 @@ using Xamarin.Forms.Xaml;
 
 namespace NeuEvents
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Home : ContentPage
+    public partial class Home : MasterDetailPage
     {
-
-        private HomeViewModel _homeViewModel;
-
         public Home()
         {
             InitializeComponent();
-            _homeViewModel = new HomeViewModel(Navigation);
-            this.BindingContext = _homeViewModel;
+            masterPage.listView.ItemSelected += OnItemSelected; 
         }
-
-        protected override void OnAppearing()
+        void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            base.OnAppearing();
-            _homeViewModel.OnAppearing();
-        }
+            var item = e.SelectedItem as MasterPageItem;
+            if (item != null)
+            {
+
+                Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetType));
+                masterPage.listView.SelectedItem = null;
+                IsPresented = false;
+            }
+       }
     }
 }

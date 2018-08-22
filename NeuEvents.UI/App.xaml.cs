@@ -23,6 +23,7 @@ namespace NeuEvents
 
             MainPage = new NavigationPage(new Login());
             //Home = new NavigationPage(new Create());
+           
         }
 
 		protected override void OnStart ()
