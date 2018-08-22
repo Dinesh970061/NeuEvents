@@ -11,27 +11,23 @@ using Xamarin.Forms.Xaml;
 
 namespace NeuEvents
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Home : ContentPage
-	{
-        TabViewControl tabView;
-        public Home ()
-		{
-			InitializeComponent ();
-
-            this.BindingContext = new HomeViewModel(Navigation);
-
-            tabView = new TabViewControl(new List<TabItem>()
+    public partial class Home : MasterDetailPage
+    {
+        public Home()
+        {
+            InitializeComponent();
+            masterPage.listView.ItemSelected += OnItemSelected; 
+        }
+        void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var item = e.SelectedItem as MasterPageItem;
+            if (item != null)
             {
-                new TabItem("All", new Label{HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand}),
-                new TabItem("Fundoo", new Label{HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand}),
-                new TabItem("Hackathon", new Label{HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand}),
-                new TabItem("Tournament", new Label{HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand}),
-            });
 
-            tabView.HorizontalOptions = LayoutOptions.FillAndExpand;
-            tabView.VerticalOptions = LayoutOptions.FillAndExpand;
-            tabViewLayout.Children.Add(tabView);
-		}
+                Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetType));
+                masterPage.listView.SelectedItem = null;
+                IsPresented = false;
+            }
+       }
     }
 }
